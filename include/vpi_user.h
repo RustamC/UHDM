@@ -63,7 +63,7 @@ typedef unsigned char    PLI_UBYTE8;
 
 /* Use to import a symbol */
 
-#if (defined(_MSC_VER) || defined(__MINGW32__) || defined(__CYGWIN__))
+#if (defined(_MSC_VER) || defined(__CYGWIN__))
 #ifndef PLI_DLLISPEC
 #define PLI_DLLISPEC __declspec(dllimport)
 #define VPI_USER_DEFINED_DLLISPEC 1
@@ -76,7 +76,7 @@ typedef unsigned char    PLI_UBYTE8;
 
 /* Use to export a symbol */
 
-#if (defined(_MSC_VER) || defined(__MINGW32__) || defined(__CYGWIN__))
+#if (defined(_MSC_VER) || defined(__CYGWIN__))
 #ifndef PLI_DLLESPEC
 #define PLI_DLLESPEC __declspec(dllexport)
 #define VPI_USER_DEFINED_DLLESPEC 1
